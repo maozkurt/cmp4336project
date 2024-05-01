@@ -22,7 +22,7 @@ tokencontract = w3.eth.contract(address=tokenaddress, abi=tokenabi)
 
 with open("./data.json", "w") as output:
     # api limits us to 10K logs per request.
-    transactions = tokencontract.events.Transfer().get_logs(fromBlock=hex(18300000), toBlock=hex(19776000))
+    transactions = tokencontract.events.Transfer().get_logs(fromBlock=hex(18300000), toBlock=hex(19776867))
     out = {}
     size = len(transactions)
     for i in range(0,size):
