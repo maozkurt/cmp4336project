@@ -72,7 +72,7 @@ for i in rawdata:
     dataset[to][8] += (vol - dataset[to][6])**2
 
     #Stddev of Sent preparation
-    dataset[fr][9] += (vol - dataset[to][7])**2
+    dataset[fr][9] += (vol - dataset[fr][7])**2
 
 for i in address:
     #Stddevs completed
