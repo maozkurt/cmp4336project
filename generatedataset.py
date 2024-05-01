@@ -81,6 +81,13 @@ for i in address:
     if dataset[i][3] != 0:
         dataset[i][9] = sqrt(dataset[i][9]/dataset[i][3])
 
+#Balances
+for i in rawdata2:
+    try:
+        dataset[i][11] = rawdata2[i]
+    except KeyError:
+        print("Balance's address doesn't exist in dataset? How???")
+
 
 #Generate CSV
 
